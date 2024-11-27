@@ -26,7 +26,7 @@ $.ajax({
             data: {
                 labels: movieNameArray,
                 datasets: [{
-                    label: 'Movies watched counter',
+                    label: 'Rating Distribution Chart',
                     data: ratingArray,
                     borderWidth: 1
                 }]
