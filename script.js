@@ -76,32 +76,32 @@ $.ajax({
     }
 });
 
-const ctx2 = document.getElementById('myChart3');
+// const ctx2 = document.getElementById('myChart3');
 
-const data = {
-    labels: [
-        'Red',
-        'Blue',
-        'Yellow'
-    ],
-    datasets: [{
-        label: movieNameArray,
-        data: [300, 50, 100],
-        backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        ],
-        hoverOffset: 4
-    }]
-};
+// const data = {
+//     labels: [
+//         'Red',
+//         'Blue',
+//         'Yellow'
+//     ],
+//     datasets: [{
+//         label: movieNameArray,
+//         data: [300, 50, 100],
+//         backgroundColor: [
+//             'rgb(255, 99, 132)',
+//             'rgb(54, 162, 235)',
+//             'rgb(255, 205, 86)'
+//         ],
+//         hoverOffset: 4
+//     }]
+// };
 
-const config = {
-    type: 'doughnut',
-    data: data,
-};
+// const config = {
+//     type: 'doughnut',
+//     data: data,
+// };
 
-new Chart(ctx2, config);
+// new Chart(ctx2, config);
 
 
 
@@ -124,6 +124,28 @@ function addMovie() {
     }
 }
 
+google.charts.load("current", {
+    packages: ["corechart"]
+  });
+  google.charts.setOnLoadCallback(drawChart);
 
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Genre', 'Percentage'],
+      ['The Shawshank Redemption', 30],
+      ['The Godfather', 20],
+      ['The Dark Knight', 15],
+      ['Pulp Fiction', 10],
+      ['The Lord of the Rings: The Return of the King', 25]
+    ]);
+
+    var options = {
+      title: 'Favorite genres pie chart',
+      is3D: true,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+    chart.draw(data, options);
+  }
 
 
