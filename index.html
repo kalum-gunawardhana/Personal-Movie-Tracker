@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Movie Tracker Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Personal Movie Tracker Dashboard</h1>
+
+        <div class="d-flex justify-content-around">
+            <div class="card mb-2" style="width: 18rem;">
+                <img src="img/OIP.jpeg" class="card-img-top" alt="The Shawshank Redemption">
+                <div class="card-body">
+                    <h5 class="card-title"><b>The Shawshank Redemption</b></h5>
+                    <p class="card-text">The Shawshank Redemption is a 1994 American prison drama film written and
+                        directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank
+                        Redemption. The film tells the story of banker Andy Dufresne, who is sentenced to life in
+                        Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of
+                        innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler
+                        Ellis "Red" Redding, and becomes instrumental in a money laundering operation led by the prison
+                        warden Samuel Norton. William Sadler, Clancy Brown, Gil Bellows, and James Whitmore appear in
+                        supporting roles</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="width: 18rem;">
+                <img src="img/R.jpeg" class="card-img-top" alt="The Godfather">
+                <div class="card-body">
+                    <h5 class="card-title"><b>The Godfather</b></h5>
+                    <p class="card-text">The Godfather is a 1972 American epic gangster film directed by Francis Ford
+                        Coppola, who co-wrote the screenplay with Mario Puzo, based on Puzo's best-selling 1969 novel.
+                        The film stars an ensemble cast including Marlon Brando, Al Pacino, James Caan, Richard
+                        Castellano, Robert Duvall, Sterling Hayden, John Marley, Richard Conte and Diane Keaton. It is
+                        the first installment in The Godfather trilogy, chronicling the Corleone family under patriarch
+                        Vito Corleone (Brando) from 1945 to 1955. It focuses on the transformation of his youngest son,
+                        Michael Corleone (Pacino), from reluctant family outsider to ruthless mafia boss.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="width: 18rem;">
+                <img src="img/R (1).jpeg" class="card-img-top" alt="The Dark Knight">
+                <div class="card-body">
+                    <h5 class="card-title"><b>The Dark Knight</b></h5>
+                    <p class="card-text">The Dark Knight is a 2008 superhero film directed by Christopher Nolan, from a
+                        screenplay co-written with his brother Jonathan. Based on the DC Comics superhero Batman, it is
+                        the sequel to Batman Begins, and the second installment in The Dark Knight trilogy. The plot
+                        follows the vigilante Batman, police lieutenant James Gordon, and district attorney Harvey Dent,
+                        who form an alliance to dismantle organized crime in Gotham City. Their efforts are derailed by
+                        the Joker, an anarchistic mastermind who seeks to test how far Batman will go to save the city
+                        from chaos. The ensemble cast includes Christian Bale, Michael Caine, Heath Ledger, Gary
+                        Oldman, Aaron Eckhart, Maggie Gyllenhaal, and Morgan Freeman.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="width: 18rem;">
+                <img src="img/OIP (1).jpeg" class="card-img-top" alt="The Dark Knight">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Pulp Fiction</b></h5>
+                    <p class="card-text">Pulp Fiction is a 1994 American independent crime film written and directed by
+                        Quentin Tarantino from a story he conceived with Roger Avary. It tells four intertwining tales
+                        of crime and violence in Los Angeles, California. The film stars John Travolta, Samuel L.
+                        Jackson, Bruce Willis, Tim Roth, Ving Rhames, and Uma Thurman. The title refers to the pulp
+                        magazines and hardboiled crime novels popular during the mid-20th century, known for their
+                        graphic violence and punchy dialogue.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- <div>
+            <canvas id="myChart2"></canvas>
+        </div> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
