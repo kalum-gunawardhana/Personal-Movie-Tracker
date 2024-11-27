@@ -104,12 +104,15 @@ $.ajax({
 // new Chart(ctx2, config);
 
 
-
+let movieNameArray2=[];
 let movieCount = 0;
 
 function addMovie() {
     const movieNameInput = document.getElementById('movieName');
     const movieName = movieNameInput.value;
+    movieNameArray2.push(movieName);
+    // console.log(movieNameArray2);
+    
 
     if (movieName) {
         const movieList = document.getElementById('movieList');
