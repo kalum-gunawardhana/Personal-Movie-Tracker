@@ -93,6 +93,20 @@
         <!-- <div>
             <canvas id="myChart2"></canvas>
         </div> -->
+
+        <div>
+            <canvas id="myChart3" style="width: 600px; height: 400px;"></canvas>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Movies Watched Counter</h1>
+        <div>
+            <input type="text" id="movieName" placeholder="Enter movie name">
+            <button onclick="addMovie()">Add Movie</button>
+        </div>
+        <ul id="movieList"></ul>
+        <p>Total movies watched: <span id="movieCount">0</span></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

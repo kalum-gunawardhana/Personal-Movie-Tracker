@@ -76,3 +76,54 @@ $.ajax({
     }
 });
 
+const ctx2 = document.getElementById('myChart3');
+
+const data = {
+    labels: [
+        'Red',
+        'Blue',
+        'Yellow'
+    ],
+    datasets: [{
+        label: movieNameArray,
+        data: [300, 50, 100],
+        backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 205, 86)'
+        ],
+        hoverOffset: 4
+    }]
+};
+
+const config = {
+    type: 'doughnut',
+    data: data,
+};
+
+new Chart(ctx2, config);
+
+
+
+let movieCount = 0;
+
+function addMovie() {
+    const movieNameInput = document.getElementById('movieName');
+    const movieName = movieNameInput.value;
+
+    if (movieName) {
+        const movieList = document.getElementById('movieList');
+        const newMovieItem = document.createElement('li');
+        newMovieItem.textContent = movieName;
+        movieList.appendChild(newMovieItem);
+
+        movieCount++;
+        document.getElementById('movieCount').textContent = movieCount;
+
+        movieNameInput.value = '';
+    }
+}
+
+
+
+
