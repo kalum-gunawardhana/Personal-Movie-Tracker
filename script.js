@@ -140,7 +140,7 @@ google.charts.load("current", {
     ]);
 
     var options = {
-      title: 'Favorite genres pie chart',
+      title: '',
       is3D: true,
     };
 
